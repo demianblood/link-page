@@ -1,13 +1,11 @@
-html{
-    height: 100%;
-    width: 100%;
-}
 
+.red{
+    color: red;
+}
 body {
-    height: 100%;
-    width: 100%;
+    width: fit-content;
     font-family: 'Montserrat', sans-serif;
-    line-height: 1;
+     line-height: 1;
     background-color: #F3F5F9;
     display: flex;
     align-items: center;
@@ -15,6 +13,7 @@ body {
 }
 
 .wrapper {
+    max-width: 1500px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -48,11 +47,12 @@ body {
     text-decoration: none;
 }
 
-
-
 /* experience section */
 .social-link{
     text-decoration: none;
+}
+.media-experience-info{
+    display: none;
 }
 .experience-section {
     display: flex;
@@ -102,6 +102,12 @@ body {
     line-height: 24px;
     text-decoration-line: underline;
     color: #EB5757;
+}
+.my-contact{
+    display: none;
+}
+.media-skills{
+    display: none;
 }
 
 /* my-info-section */
@@ -183,7 +189,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #2F80ED;
+    color: red;
     margin-bottom: 50px;
 }
 
@@ -204,7 +210,7 @@ body {
 .project-price-form {
     padding: 40px;
     background: #FFFFFF;
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
     border-radius: 16px;
 }
 
@@ -267,7 +273,7 @@ body {
     text-align: center;
 }
 
-.project-price-calculate-button {
+.project-price-calculate-button{
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -294,7 +300,7 @@ body {
 
     pointer-events: none;
     opacity: 0;
-    transition: opacity 0.3s e;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .modal-active {
@@ -303,7 +309,7 @@ body {
 }
 
 .modal-container {
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
     border-radius: 16px;
     background: #FFFFFF;
     padding: 110px 40px;
@@ -360,7 +366,6 @@ body {
 
 
 .email-error-text {
-    margin-top: 8px;
     color: #EB5757;
     font-size: 16px;
     line-height: 24px;
@@ -376,7 +381,7 @@ body {
     border-bottom: 1px solid #EB5757;
 }
 
-.btn {
+.btn{
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;

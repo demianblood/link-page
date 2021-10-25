@@ -1,0 +1,59 @@
+@media screen and (max-width: 992px) {
+    .wrapper {
+        flex-direction: column;
+
+    }
+
+    .contacts-section {
+        display: none;
+    }
+
+    .media-experience-info {
+        display: block;
+    }
+
+    .experience-section {
+        margin-top: 60px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+    .media-skills{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .my-info-section {
+        display: none;
+    }
+
+    .my-name {
+        width: fit-content;
+    }
+
+    .my-profession {
+        font-size: 25px;
+        line-height: 24px;
+        margin-bottom: 28px;
+    }
+
+    .my-description {
+        color: #FFFFFF;
+        background-color: #2F80ED;
+        padding: 5px 15px;
+    }
+
+    .my-location,
+    .my-workstyle {
+        display: none;
+    }
+    .project-price-section{
+        width: auto;
+    }
+}

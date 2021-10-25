@@ -12,162 +12,200 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- contacts section -->
-        <section class="contacts-section">
-            <a href="#" class="telegram-link social-link"><img src="img/icons/telegram-icon.svg" alt="telegram-link"
-                    class="icon"></a>
-            <a href="#" class="viber-link social-link"><img src="img/icons/viber-icon.svg" alt="viber-link" class="icon"></a>
-            <a href="tel:+3800000000" class="phone-link-item social-link"><img src="img/icons/phone-icon.svg" alt="phone-link-item"
-                    class="icon"></a>
-            <a href="tel:+3800000000" class="phone-link-number social-link">+380 000 00 00</a>
-        </section>
-        <!-- Experience-section -->
-        <section class="experience-section">
-            <div>
-                <img src="img/1537175496151.jpg" alt="My photo" class="my-photo">
-            </div>
-
-            <div>
-                <a href="#" class="social-link">
-                    <img src="img/icons/linkedin-icon.svg" alt="linked in" class="icon margin-icon">
-                </a>
-                <a href="#" class="social-link">
-                    <img src="img/icons/fb-icon.svg" alt="facebook" class="icon">
-                </a>
-            </div>
-
-            <div class="experience-description">
-                <p class="experience-description-text experience-description-text-first">32 готовых проекта</p>
-                <p class="experience-description-text experience-description-text-two">2 года опыта</p>
-            </div>
-
-            <div class="technologies-container">
-                <img src="img/icons/js-icon.svg" alt="js-icon" class="margin-icon">
-                <img src="img/icons/react-icon.svg" alt="react-icon" class="margin-icon">
-                <img src="img/icons/nodejs-icon.svg" alt="nodejs-icon">
-            </div>
-            <div>
-                <a class="my_projects_link" href="#">Мои работы</a>
-            </div>
-        </section>
-
-        <!-- my-info-section -->
-        <section class="my-info-section">
-
-            <h2 class="my-name">Привет! Я - Русакович Иван</h2>
-
-            <h1 class="my-profession">Я делаю сайты</h1>
-
-            <p class="my-location"> Живу в Перу </p>
-
-            <p class="my-workstyle">Работаю удаленно</p>
-
-            <p class="my-description">Я - человек-оркестр. В одиночку заменяю целую веб-студию. </p>
-
-            <div>
-                <p class="skills-title">Умею:</p>
-                <ul class="my-skills-list">
-                    <li class="my-skills">
-                        <p class="my-skills-text"> Управлять IT-проектами и командами;</p>
-                    </li>
-                    <li class="my-skills">
-                        <p class="my-skills-text"> Senior Front End разработчик;</p>
-                    </li>
-                    <li class="my-skills">
-                        <p class="my-skills-text"> Middle Back End разработчик;</p>
-                    </li>
-                    <li class="my-skills">
-                        <p class="my-skills-text"> Могу проконтролировать качество своего или вашего проекта, как QA -
-                            специалист.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- project price section -->
-        <section class="project-price-section">
-
-            <form class="project-price-form" method="post" name="Просчет проекта" data-netlify="true" id="project-price-form">
-                <h4 class="project-price-title">Расчитай стоимость проекта</h4>
-                <div class="project-type-container">
-                    <label for="project-type" class="project-price-from-field-title">Тип сайта</label>
-                    <select name="Project type" id="project-type" class="project-price-select">
-                        <option selected value="landing-page">Landing page</option>
-                        <option value="online-store">Online Store</option>
-                        <option value="web-application">Web Application</option>
-                        <option value="mobile-application">Mobile Application</option>
-                    </select>
-                </div>
-
-                <div class="activity-type-container">
-                    <p class="project-price-from-field-title">Тип работ</p>
-
-                    <div class="activity-type-item"><input type="checkbox" name="Project-Management"
-                            id="project-management" class="activity-type-checkbox">
-                        <label for="project-management" class="activity-type-title"> Project Management</label></div>
-                    <div class="activity-type-item"><input type="checkbox" name="Design" id="design"
-                            class="activity-type-checkbox">
-                        <label for="design" class="activity-type-title">Design</label></div>
-                    <div class="activity-type-item"><input type="checkbox" name="Developer" id="developer"
-                            class="activity-type-checkbox">
-                        <label for="developer" class="activity-type-title">Developer</label></div>
-                    <div class="activity-type-item"><input type="checkbox" name="QA" id="QA"
-                            class="activity-type-checkbox">
-                        <label for="QA" class="activity-type-title">QA</label></div>
-                </div>
-                <div class="project-price-container">
-                    <p class="project-price-from-field-title">Стоимость</p>
-                    <p class="project-price-sum"> <span class="project-price-currency">$</span> <span
-                            id="total-price">0</span></p>
-                </div>
-
-                <input type="hidden" name="Email">
-
-                <div class="project-price-calculate-button-container">
-                    <button class="project-price-calculate-button">Оставить запрос</button>
-                </div>
-            </form>
-        </section>
-    </div>
-
-    <!-- Modal container section -->
-    <div class="modal-bgd" id="modal-email">
-        <div class="modal-container">
-            <button class="modal-close-btn">
-                <img src="img/icons/close-icon.svg" alt="close icon">
-            </button>
-            <img src="img/icons/mail-icon.svg" alt="mail-icon" class="modal-icon">
-            <h4 class="modal-title">
-                Я свяжусь с вами на <br>протяжении ближайшего часа
-            </h4>
-            <form action="#" class="modal-container-form" id="form-modal-container">
-                <div class="email-input-container" id="email-input-container">
-                    <label for="user-email" class="user-email-title">Email</label>
-                    <input type="email" name="user-email" id="user-email" class="user-email"
-                        placeholder="Укажите Email">
-                    <p class="email-error-text">Проверьте Email</p>
-                </div>
-
-                <button type="submit" class="btn">Отправить</button>
-            </form>
+<div class="wrapper">
+    <!-- contacts section -->
+    <section class="contacts-section">
+        <a href="https://t.me/DemiKole" class="telegram-link social-link"><img src="img/icons/telegram-icon.svg" alt="telegram-link"
+                                                                               class="icon"></a>
+        <a href="tel:+3800000000" class="phone-link-item social-link"><img src="img/icons/phone-icon.svg"
+                                                                           alt="phone-link-item" class="icon"></a>
+        <a href="tel:+3800000000" class="phone-link-number social-link">+380 99 528 0450 </a>
+    </section>
+    <!-- Experience-section -->
+    <section class="experience-section">
+        <div class="my-contact">
+            <a href="https://t.me/DemiKole" class="telegram-link social-link"><img src="img/icons/telegram-icon.svg" alt="telegram-link"
+                                                                                   class="icon"></a>
+            <a href="tel:+3800000000" class="phone-link-item social-link"><img src="img/icons/phone-icon.svg"
+                                                                               alt="phone-link-item" class="icon"></a>
+            <a href="tel:+3800000000" class="phone-link-number social-link">+380 99 528 0450 </a>
         </div>
-    </div>
-    <div class="modal-bgd" id="success-modal">
-        <div class="modal-container modal-container-success">
-            <button class="modal-close-btn">
-                <img src="img/icons/close-icon.svg" alt="close icon">
-            </button>
-            <img src="img/icons/success-icon.svg" alt="success-icon" class="icon success-icon">
-            <p class="modal-success-message">
-                Ваш запрос принят,<br> я скоро с вами свяжусь
-            </p>
+        <div class="media-experience-info">
+            <h2 class="my-name">Привіт! Я - Русакович Іван</h2>
+
+            <h1 class="my-profession">Я створюю сайти</h1>
         </div>
+        <div>
+            <img src="img/1537175496151.jpg" alt="My photo" class="my-photo">
+        </div>
+
+        <div>
+            <a href="https://www.linkedin.com/in/%D1%96%D0%B2%D0%B0%D0%BD-%D1%80%D1%83%D1%81%D0%B0%D0%BA%D0%BE%D0%B2%D0%B8%D1%87-8895a221b/"
+               class="social-link">
+                <img src="img/icons/linkedin-icon.svg" alt="linked in" class="icon margin-icon">
+            </a>
+            <a href="https://www.facebook.com/people/%D0%86%D0%B2%D0%B0%D0%BD-%D0%A0%D1%83%D1%81%D0%B0%D0%BA%D0%BE%D0%B2%D0%B8%D1%87/100025410891566/"
+               class="social-link">
+                <img src="img/icons/fb-icon.svg" alt="facebook" class="icon">
+            </a>
+        </div>
+
+        <div class="experience-description">
+            <p class="experience-description-text experience-description-text-first">Front-end розробник</p>
+            <p class="experience-description-text experience-description-text-first red">Це сайт пробник по макету</p>
+        </div>
+
+        <div class="technologies-container">
+            <img src="img/icons/js-icon.svg" alt="js-icon" class="margin-icon">
+            <img src="img/icons/react-icon.svg" alt="react-icon" class="margin-icon">
+            <img src="img/angularjs-icon-10.jpg" alt="angular-icon">
+        </div>
+        <div class="media-skills">
+            <p class="skills-title">Навички:</p>
+            <ul class="my-skills-list">
+                <li class="my-skills">
+                    <p class="my-skills-text"> HTML,CSS,JS,TypeScript;</p>
+                </li>
+                <li class="my-skills">
+                    <p class="my-skills-text">Angular,React<p>
+                </li>
+                <li class="my-skills">
+                    <p class="my-skills-text">лендинг;</p>
+                </li>
+                <li class="my-skills">
+                    <p class="my-skills-text">верстка;</p>
+                </li>
+                <li class="my-skills">
+                    <p class="my-skills-text">адаптивна верстка</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <a class="my_projects_link" href="https://github.com/demianblood?tab=repositories">Мій Git</a>
+        </div>
+
+    </section>
+
+    <!-- my-info-section -->
+    <section class="my-info-section">
+
+        <h2 class="my-name">Привіт! Я - Русакович Іван</h2>
+
+        <h1 class="my-profession">Я створюю сайти</h1>
+
+        <p class="my-location"> Живу у Львові </p>
+
+        <p class="my-workstyle">Працюю віддалено</p>
+
+        <p class="my-description">Я - людина-оркестр. Вмію все окрім того чого не вмію, до моменту коли навчуся.</p>
+
+        <div>
+            <p class="skills-title">Навички:</p>
+            <ul class="my-skills-list">
+                <li class="my-skills">
+                    <p class="my-skills-text"> HTML,CSS,JS,TypeScript;</p>
+                </li>
+                <li class="my-skills">
+                    <p class="my-skills-text">Angular,React<p>
+                </li>
+                <li class="my-skills">
+                    <p class="my-skills-text">лендинг;</p>
+                </li>
+                <li class="my-skills">
+                    <p class="my-skills-text">верстка;</p>
+                </li>
+                <li class="my-skills">
+                    <p class="my-skills-text">адаптивна верстка</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- project price section -->
+    <section class="project-price-section">
+
+        <form class="project-price-form" method="post" name="Просчет проекта" data-netlify="true"
+              id="project-price-form">
+            <h4 class="project-price-title">Пробник розрахунку вартості <br> (ціни довільні)</h4>
+            <div class="project-type-container">
+                <label for="project-type" class="project-price-from-field-title">Тип сайту</label>
+                <select name="Project type" id="project-type" class="project-price-select">
+                    <option selected value="landing-page">Landing page</option>
+                    <option value="online-store">Online Store</option>
+                    <option value="web-application">Web Application</option>
+                    <option value="mobile-application">Mobile Application</option>
+                </select>
+            </div>
+
+            <div class="activity-type-container">
+                <p class="project-price-from-field-title">Тип робіт</p>
+
+                <div class="activity-type-item"><input type="checkbox" name="Project-Management"
+                                                       id="project-management" class="activity-type-checkbox">
+                    <label for="project-management" class="activity-type-title"> Project Management</label></div>
+                <div class="activity-type-item"><input type="checkbox" name="Design" id="design"
+                                                       class="activity-type-checkbox">
+                    <label for="design" class="activity-type-title">Design</label></div>
+                <div class="activity-type-item"><input type="checkbox" name="Developer" id="developer"
+                                                       class="activity-type-checkbox">
+                    <label for="developer" class="activity-type-title">Developer</label></div>
+                <div class="activity-type-item"><input type="checkbox" name="QA" id="QA"
+                                                       class="activity-type-checkbox">
+                    <label for="QA" class="activity-type-title">QA</label></div>
+            </div>
+            <div class="project-price-container">
+                <p class="project-price-from-field-title">Вартість</p>
+                <p class="project-price-sum"> <span class="project-price-currency">$</span> <span
+                        id="total-price">0</span></p>
+            </div>
+
+            <input type="hidden" name="Email">
+
+            <div class="project-price-calculate-button-container">
+                <button class="project-price-calculate-button">Залишити запит</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+<!-- Modal container section -->
+<div class="modal-bgd" id="modal-email">
+    <div class="modal-container">
+        <button class="modal-close-btn">
+            <img src="img/icons/close-icon.svg" alt="close icon">
+        </button>
+        <img src="img/icons/mail-icon.svg" alt="mail-icon" class="modal-icon">
+        <h4 class="modal-title">
+            Я звяжусь з вами <br> на протязі години
+        </h4>
+        <form action="#" class="modal-container-form" id="form-modal-container">
+            <div class="email-input-container" id="email-input-container">
+                <label for="user-email" class="user-email-title">Email</label>
+                <input type="email" name="user-email" id="user-email" class="user-email"
+                       placeholder="Вкажіть Email">
+                <p class="email-error-text">Перевірте Email</p>
+            </div>
+
+            <button type="submit" class="btn">Відправити</button>
+        </form>
     </div>
-    <script src="js/script.js"></script>
+</div>
+<div class="modal-bgd" id="success-modal">
+    <div class="modal-container modal-container-success">
+        <button class="modal-close-btn">
+            <img src="img/icons/close-icon.svg" alt="close icon">
+        </button>
+        <img src="img/icons/success-icon.svg" alt="success-icon" class="icon success-icon">
+        <p class="modal-success-message">
+            Ваш запит прийнятий,<br> я скоро з вами звяжусь
+        </p>
+    </div>
+</div>
+<script src="js/script.js"></script>
 </body>
 
 </html>
